@@ -1,0 +1,3 @@
+docker run -d -p 27017:27017 -v ~/mongodb:/data/db --name itemsdata mongo
+pip install -r requirements.txt
+app.py (Windows) / python3 app.py (Остальное)

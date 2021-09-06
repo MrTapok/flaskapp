@@ -1,0 +1,30 @@
+curl -X POST http://192.168.1.101:5000/create_item
+   -H 'Content-Type: application/json'
+   -d '{"name":"Iphone 11 white","description":"It is Iphone 11 white", "properties":[{"creator":"Apple"},{"cost":20000},{"color":"white"}]}'
+curl -X POST http://192.168.1.101:5000/create_item
+   -H 'Content-Type: application/json'
+   -d '{"name":"Iphone 12 black","description":"It is Iphone 12 black", "properties":[{"creator":"Apple"},{"cost":30000},{"color":"black"}]}'
+curl -X POST http://192.168.1.101:5000/create_item
+   -H 'Content-Type: application/json'
+   -d '{"name":"Iphone 11 black","description":"It is Iphone 11 black", "properties":[{"creator":"Apple"},{"cost":20000},{"color":"black"}]}'
+curl -X POST http://192.168.1.101:5000/create_item
+   -H 'Content-Type: application/json'
+   -d '{"name":"Xiaomi black","description":"It is Xiaomi black", "properties":[{"creator":"Mi"},{"cost":30000},{"color":"black"}]}'
+curl -X POST http://192.168.1.101:5000/create_item
+   -H 'Content-Type: application/json'
+   -d '{"name":"Xiaomi white","description":"It is Xiaomi white", "properties":[{"creator":"Mi"},{"cost":20000},{"color":"white"}]}'
+
+
+curl -X POST http://192.168.1.101:5000/id_search
+   -H 'Content-Type: application/json'
+   -d '{"_id":"вставьте сюда любой id который вернул create_item"}'
+
+curl -X POST http://192.168.1.101:5000/get_item
+   -H 'Content-Type: application/json'
+   -d '{"name":"Iphone"}'
+curl -X POST http://192.168.1.101:5000/get_item
+   -H 'Content-Type: application/json'
+   -d '{"properties":[color:"black"]}'
+curl -X POST http://192.168.1.101:5000/get_item
+   -H 'Content-Type: application/json'
+   -d '{"name":"Iphone","properties":[color:"black"]}'
