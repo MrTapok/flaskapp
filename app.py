@@ -46,7 +46,7 @@ def create_item():
     )
 
 
-@app.route('/get_item', methods=["POST"])
+@app.route('/get_item', methods=["POST", "GET"])
 def get_item():
     status = 200
     dict_for_return = {}
@@ -82,7 +82,7 @@ def get_item():
     )
 
 
-@app.route('/id_search', methods = ["POST"])
+@app.route('/id_search', methods = ["POST", "GET"])
 def get_details_by_id():
     print(db.items.find({}))
     status = 200
